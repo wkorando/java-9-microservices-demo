@@ -1,0 +1,1 @@
+<h3>Resources for {{project.name}}</h3><span ng-show="resources.length === 0">No resources assigned.</span><table class=table ng-show="resources.length > 0"><thead><tr><th>Name<th>Role<th>Email<tbody><tr ng-repeat="resource in resources"><td>{{resource.employee | name}}<td>{{resource.role}}<td><a href=mailto:{{resource.employee.email}}>{{resource.employee.email}}</a></table>

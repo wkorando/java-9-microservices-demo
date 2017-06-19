@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.khs</groupId>
+	<artifactId>java-9-microservices-demo</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>khs-api-gateway</module>
+		<module>khs-employee-service</module>
+		<module>khs-eureka</module>
+		<module>khs-project-service</module>
+		<module>khs-project-ui-service</module>
+		<module>khs-user-story-service</module>
+		<module>khs-zuul</module>
+	</modules>
+
+</project>

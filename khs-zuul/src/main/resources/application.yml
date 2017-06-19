@@ -1,0 +1,38 @@
+info:
+  component: Zuul
+  
+server:
+  port: 8080
+  
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  ignoredServices: '*'
+  routes:
+      api:
+        path: /api/**
+        serviceId: api-gateway
+        stripPrefix: false
+      static:
+        path: /**
+        serviceId: project-ui
+        url: http://localhost:9091
+        
+            
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+  
+
+logging:
+  level:
+    ROOT: ERROR
+    org.springframework.web: DEBUG

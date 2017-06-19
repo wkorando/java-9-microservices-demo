@@ -1,0 +1,18 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: eureka
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      default: http://localhost:8761/eure/
+  server:
+    enable-self-preservation: true
+        
+spring:
+  cloud:
+    bus:
+      enabled: false

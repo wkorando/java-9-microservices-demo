@@ -1,0 +1,17 @@
+server:
+  port: 9091
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+
+logging:
+  level:
+    ROOT: INFO
+    com.netflix.discovery: 'OFF'
+      
+troublemaker:
+  client:
+    token: abc123

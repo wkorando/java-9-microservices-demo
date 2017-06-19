@@ -1,0 +1,1 @@
+<h3>User Stories for {{project.name}}</h3><span ng-show="userStories.length === 0">No User Stories assigned.</span><table class=table ng-show="userStories.length > 0"><thead><tr><th>Name<th>Description<th>Estimate<th>Sprint<tbody><tr ng-repeat="story in userStories"><td>{{story.name}}<td>{{story.description}}<td>{{story.estimate}}<td>Sprint {{story.sprint}}</table>

@@ -1,0 +1,21 @@
+server:
+  port: 9090
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+
+logging:
+  level:
+    ROOT: INFO
+    com.netflix.discovery: 'OFF'
